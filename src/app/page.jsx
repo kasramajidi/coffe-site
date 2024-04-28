@@ -25,8 +25,8 @@ const links = [
 
 export default function page() {
   return (
-    /* HEADER */
     <div>
+      {/* HEADER */}
       <div>
         <Image src="./img/Logo.svg" alt='' width={30} height={30} />
         <Link href={"/"}>
@@ -57,7 +57,8 @@ export default function page() {
           <ShoppingBasketOutlinedIcon/>
         </Link>
       </div>
-    </div>
+      {/* MAIN */}
+    </div> 
   )
 }
 
