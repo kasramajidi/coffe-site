@@ -19,8 +19,8 @@ const links = [
     {url: "/shop", title: "Shop"},
     {url: "/weblog", title: "Weblog"},
     {url: "/order", title: "Order"},
-    {url: "/callus", title: "Callus"},
-    {url: "/aboutus", title: "Aboutus"},
+    {url: "/callUs", title: "CallUs"},
+    {url: "/aboutUS", title: "AboutUS"},
 ];
 
 export default function page() {
@@ -47,11 +47,11 @@ export default function page() {
                         <FeedOutlinedIcon className={"text-emerald-600"}/>
                         <span> وبلاگ </span>
                     </Link>
-                    <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/aboutus"}>
+                    <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/aboutUS"}>
                         <InfoOutlinedIcon className={"text-emerald-600"}/>
                         <span> درباره ما </span>
                     </Link>
-                    <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/callus"}>
+                    <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/callUs"}>
                         <ContactPhoneOutlinedIcon className={"text-emerald-600"}/>
                         <span> تماس با ما </span>
                     </Link>
