@@ -15,7 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+body{
+  background: #F5F5F5;
+}
 
 
 @layer utilities {
