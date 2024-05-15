@@ -1,6 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+{/* FONT */}
+
+import {Amiri} from "next/font/google"
+
+const roboto = Amiri({
+    subsets: ["arabic"],
+    weight:["400"]
+})
+
 
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
@@ -33,27 +42,27 @@ export default function page() {
                     <Image src="./img/Logo.svg" alt="" width={50} height={50}/>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/"}>
                         <HomeOutlinedIcon className={"text-emerald-600"}/>
-                        <span> صفحه اصلی </span>
+                        <span className={roboto.className}> صفحه اصلی </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/shop"}>
                         <StorefrontOutlinedIcon className={"text-emerald-600"}/>
-                        <span> فروشگاه </span>
+                        <span className={roboto.className}> فروشگاه </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/order"}>
                         <CoffeeIcon className={"text-emerald-600"}/>
-                        <span> سفارش قهوه </span>
+                        <span className={roboto.className}> سفارش قهوه </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/weblog"}>
                         <FeedOutlinedIcon className={"text-emerald-600"}/>
-                        <span> وبلاگ </span>
+                        <span className={roboto.className}> وبلاگ </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/aboutUS"}>
                         <InfoOutlinedIcon className={"text-emerald-600"}/>
-                        <span> درباره ما </span>
+                        <span className={roboto.className}> درباره ما </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/callUs"}>
                         <ContactPhoneOutlinedIcon className={"text-emerald-600"}/>
-                        <span> تماس با ما </span>
+                        <span className={roboto.className}> تماس با ما </span>
                     </Link>
                 </div>
 
