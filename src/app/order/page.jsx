@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function OrderPage() {
+export default function Order() {
   return (
     <div>order-coffee</div>
   )

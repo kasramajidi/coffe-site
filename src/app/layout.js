@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import Navbar from "@/components/navbar";
 
 export const metadata = {
   title: "سایت فروشگاه قهوه",
@@ -9,7 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body>{children}</body>
+      <body>
+        <div>
+        <Navbar/>
+        {children}
+        </div>
+      </body>
     </html>
   );
 }
