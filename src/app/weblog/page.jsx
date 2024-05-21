@@ -2,6 +2,16 @@ import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
+import localFont from "next/font/local";
+
+const Media = localFont({
+    src: "../../components/fonts/Morabba/woff2/Morabba-Light.woff2"
+})
+
+
+
+
+
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
@@ -14,6 +24,7 @@ import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined
 import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
+import {log} from "next/dist/server/typescript/utils";
 
 export default function WeblogPage() {
     return (
@@ -21,7 +32,7 @@ export default function WeblogPage() {
             {/* section 1 */}
             <section className={'flex w-full'}>
                 {/* side */}
-                <div className={"ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4"}>
+                <div className={`${Media.className} ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4`}>
                     <div className={' px-[13px] py-[10px]'}>
                         <Link href={"/"}>
                             <TheaterComedyOutlinedIcon className={'ml-2'}/>
@@ -280,7 +291,7 @@ export default function WeblogPage() {
                         </div>
                     </div>
                 </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'} >
+                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
                     <div className={'relative'}>
                         <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
                                src="/img/Blog/post-4-1.jpg"

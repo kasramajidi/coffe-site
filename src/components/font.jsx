@@ -2,7 +2,7 @@
 import localFont from "next/font/local"
 
 
-const Danamedium = localFont({
+export  const Danamedium = localFont({
     src: "./fonts/Dana/woff2/DanaFaNum-Medium.woff2"
 })
 
@@ -29,4 +29,3 @@ const Morabbamedium = localFont({
     src: "./fonts/Morabba/woff2/Morabba-Medium.woff2"
 })
 
-export default [Danabold, Danamedium, Danareg, Morabbabold, Morabbalight, Morabbamedium]
