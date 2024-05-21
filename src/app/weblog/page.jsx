@@ -9,9 +9,6 @@ const Media = localFont({
 })
 
 
-
-
-
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
@@ -32,7 +29,8 @@ export default function WeblogPage() {
             {/* section 1 */}
             <section className={'flex w-full'}>
                 {/* side */}
-                <div className={`${Media.className} ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4`}>
+                <div
+                    className={`${Media.className} ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4`}>
                     <div className={' px-[13px] py-[10px]'}>
                         <Link href={"/"}>
                             <TheaterComedyOutlinedIcon className={'ml-2'}/>
@@ -467,7 +465,6 @@ export default function WeblogPage() {
                     </div>
                 </div>
             </section>
-
         </div>
     )
 }
