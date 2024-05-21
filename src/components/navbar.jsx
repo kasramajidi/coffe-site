@@ -6,9 +6,8 @@ import Link from "next/link";
 import localFont from "next/font/local"
 
 const testFont = localFont({
-    src: "../app/fonts/Dana/woff2/DanaFaNum-Regular.woff2"
+    src: "./fonts/Dana/woff2/DanaFaNum-Medium.woff2"
 })
-
 
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
