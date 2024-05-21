@@ -4,11 +4,6 @@ import Link from "next/link";
 
 import localFont from "next/font/local"
 
-
-const Morabbabold = localFont({
-    src: "./fonts/Morabba/woff2/Morabba-Bold.woff2"
-})
-
 const Danamedium = localFont({
     src: "./fonts/Dana/woff2/DanaFaNum-Medium.woff2"
 })
@@ -52,7 +47,7 @@ export default function navbar() {
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/order"}>
                         <CoffeeIcon className={"text-emerald-600"}/>
-                        <span className={Morabbabold.className}> سفارش قهوه </span>
+                        <span className={Danamedium.className}> سفارش قهوه </span>
                     </Link>
                     <Link className={"px-4 transition-all hover:text-emerald-600"} href={"/weblog"}>
                         <FeedOutlinedIcon className={"text-emerald-600"}/>
