@@ -4,11 +4,21 @@ import Link from "next/link";
 
 import localFont from "next/font/local";
 
-const Media = localFont({
+const MorabaLight = localFont({
     src: "../../components/fonts/Morabba/woff2/Morabba-Light.woff2"
 })
-
-
+const Morabab = localFont({
+    src: "../../components/fonts/Morabba/woff2/Morabba-Bold.woff2"
+})
+const Danam = localFont({
+    src: "../../components/fonts/Dana/woff2/DanaFaNum-Medium.woff2"
+})
+const Danareg = localFont({
+    src: "../../components/fonts/Dana/woff2/DanaFaNum-Regular.woff2"
+})
+const Danab = localFont({
+    src: "../../components/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2"
+})
 import SportsEsportsOutlinedIcon from '@mui/icons-material/SportsEsportsOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
 import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
@@ -25,12 +35,11 @@ import {log} from "next/dist/server/typescript/utils";
 
 export default function WeblogPage() {
     return (
-        <div className={"w-[85%] m-auto mt-12"}>
+        <div className={`${Danareg.className} w-[85%] m-auto mt-12`}>
             {/* section 1 */}
             <section className={'flex w-full'}>
                 {/* side */}
-                <div
-                    className={`${Media.className} ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4`}>
+                <div className={` ml-6 w-[20%] h-[367px] shadow-normal bg-white flex flex-col rounded-2xl p-4`}>
                     <div className={' px-[13px] py-[10px]'}>
                         <Link href={"/"}>
                             <TheaterComedyOutlinedIcon className={'ml-2'}/>
@@ -75,7 +84,7 @@ export default function WeblogPage() {
                     </div>
                 </div>
                 {/* blog */}
-                <div className={'w-[80%]'}>
+                <div className={`${Danam.className} w-[80%]`}>
                     <div className={"w-full text-white"}>
                         <div className={"flex justify-around gap-x-5 mb-5"}>
                             <div
@@ -178,294 +187,343 @@ export default function WeblogPage() {
             <section className={'mt-24'}>
                 <div className={'flex items-center gap-x-2'}>
                     <Image src={'/img/icon.svg'} alt={'dhd'} width={'38'} height={'38'}></Image>
-                    <h4 className={'text-4xl'}>مطالب وبلاگ</h4>
+                    <h4 className={`${Morabab.className} text-4xl`}>مطالب وبلاگ</h4>
                     <Image className={'mt-5'} src={'/img/brag.svg'} alt={'ee'} width={'36'} height={'36'}></Image>
                 </div>
             </section>
             { /* section 3 */}
-            <section className={'grid grid-cols-4 mt-8 mb-10'}>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+            <section className={'mt-8 mb-10'}>
+                <div className={'flex justify-between'}>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/post-4-1.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
                         </div>
-                    </div>
-                </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4`}>
+                                جدیدترین رندرهای شیائومی طراحی جذاب آن
+                            </Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2
+                                را در
+                                تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
+                                از رونمایی این ساعت…</p>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/post-2.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>2 دقیقه زمان مطالعه</span>
                         </div>
-                    </div>
-                </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4 `}>
+                                رویداد رونمایی از سرفیس‌ها در تاریخ ۲۰ مهر در اسال</Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>اینطور که به نظر می‌رسد، مایکروسافت در نظر
+                                دارد رویداد مورد انتظار خود را به صورت حضوری و در تاریخ ۲۰ مهر برگزار کند…</p>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'1000'}
+                                   src="/img/Blog/post-3-768x307.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>2 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4 `}>
+                                رویداد رونمایی از سرفیس‌ها در تاریخ ۲۰ مهر در اسال</Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>گاهی بازی در نقش شخصیت‌های منفی، سخت‌تر از
+                                بازی در قالب قطب مثبت ماجرا است. به ویژه اگر آن شخصیت خویی وحشی هم داشته باشد…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/post-1.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
+                        </div>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4`}>
+                                جدیدترین رندرهای شیائومی طراحی جذاب آن
+                            </Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2
+                                را در
+                                تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
+                                از رونمایی این ساعت…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
+                <div className={'flex justify-between'}>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/blog-new-6.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
                         </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4`}>
+                                جدیدترین رندرهای شیائومی طراحی جذاب آن
+                            </Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2
+                                را در
+                                تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
+                                از رونمایی این ساعت…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/perfium-3.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
+                        </div>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4`}>
+                                جدیدترین رندرهای شیائومی طراحی جذاب آن
+                            </Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2
+                                را در
+                                تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
+                                از رونمایی این ساعت…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'1000'}
+                                   src="/img/Blog/blog-new-7.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
+                        </div>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>2 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4 `}>
+                                رویداد رونمایی از سرفیس‌ها در تاریخ ۲۰ مهر در اسال</Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>گاهی بازی در نقش شخصیت‌های منفی، سخت‌تر از
+                                بازی در قالب قطب مثبت ماجرا است. به ویژه اگر آن شخصیت خویی وحشی هم داشته باشد…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
+                        <div className={'relative'}>
+                            <Image className="h-56 w-[300px] rounded-t-lg" width={'500'} height={'300'}
+                                   src="/img/Blog/Android-update-installing-840w-472h-768x488.jpg"
+                                   alt="c"/>
+                            <Link href={'/'}
+                                  className={'absolute text-xs bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>بازی
+                                ویدئویی </Link>
+                        </div>
+                        <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
+                            <AccessTimeOutlinedIcon className={'text-sm'}/>
+                            <span className={'ml-2'}>2 دقیقه زمان مطالعه</span>
+                        </div>
+                        <div className={'mt-2'}>
+                            <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base px-4 `}>
+                                رویداد رونمایی از سرفیس‌ها در تاریخ ۲۰ مهر در اسال</Link>
+                            <p className={'text-xs line-clamp-3 px-4 pt-[10px]'}>اینطور که به نظر می‌رسد، مایکروسافت در نظر
+                                دارد رویداد مورد انتظار خود را به صورت حضوری و در تاریخ ۲۰ مهر برگزار کند…</p>
+                        </div>
+                        <div className={'flex justify-between mr-3  mt-8 mb-7'}>
+                            <div className={'flex gap-x-4'}>
+                                <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'}
+                                       className={'w-10 h-10 rounded-full'} width={'100'}
+                                       height={'100'}
+                                       alt={'d'}></Image>
+                                <div className={'flex flex-col'}>
+                                    <span className={'text-sm'}>طراح سایت</span>
+                                    <span className={'text-xs'}>2 سال قبل</span>
+                                </div>
+                            </div>
+                            <div
+                                className={'bg-gray-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
+                                <ArrowBackOutlinedIcon/>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
-                        </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
-                        </div>
-                    </div>
+            </section>
+            { /* section 4 */}
+            <section>
+                <div className={'w-full h-[47px] bg-white rounded-2xl flex items-center justify-center gap-x-6'}>
+                    <Link href={'/'} className={'hover:text-emerald-600'}>
+                        <span>1</span>
+                    </Link>
+                    <Link href={'/'} className={'hover:text-emerald-600'}>
+                        <span>2</span>
+                    </Link>
+                    <Link href={'/'} className={'hover:text-emerald-600'}>
+                        <span>3</span>
+                    </Link>
+                    <Link href={'/'} className={'hover:text-emerald-600'}>
+                        <span>بعدی</span>
+                    </Link>
+
                 </div>
-                <div className={'bg-white mt-8 w-[300px] rounded-lg'}>
-                    <div className={'relative'}>
-                        <Image className="h-56 w-[300px] rounded-t-lg" width={'300'} height={'200'}
-                               src="/img/Blog/post-4-1.jpg"
-                               alt="c"/>
-                        <Link href={'/'}
-                              className={'absolute bottom-3.5 right-3.5 bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[3px]'}>بازی
-                            ویدئویی </Link>
-                    </div>
-                    <div className={'pr-2 pt-2 text-gray-400 text-sm mr-3'}>
-                        <AccessTimeOutlinedIcon className={'text-sm'}/>
-                        <span className={'ml-2'}>6 دقیقه زمان مطالعه</span>
-                    </div>
-                    <div className={'mt-2'}>
-                        <Link href={'/'} className={'text-base'}>
-                            جدیدترین رندرهای شیائومی طراحی جذاب آن
-                        </Link>
-                        <p className={'line-clamp-2 px-4 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی CIVI 2 را در
-                            تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                            از رونمایی این ساعت…</p>
-                    </div>
-                    <div className={'flex justify-between mr-3  mt-8 mb-7'}>
-                        <Image src={'/img/a0513619c230370bf5ae6743a3dc3337.png'} className={'rounded-full'} width={'40'}
-                               height={'40'}
-                               alt={'d'}></Image>
-                        <div className={'flex flex-col'}>
-                            <span>طراح سایت</span>
-                            <span>2 سال قبل</span>
-                        </div>
-                        <div
-                            className={'bg-sky-100 hover:bg-green-900 transition-all text-zinc-500 hover:text-white flex items-center justify-center rounded-r-lg w-[65px]'}>
-                            <ArrowBackOutlinedIcon/>
-                        </div>
-                    </div>
+            </section>
+            { /* section 5 */}
+            <section className={'mt-24 mb-10'}>
+                <div className={'w-full'}>
+                    <Image className="w-full" width={'10000'} height={'10000'}
+                           src="/img/Blog/blog-banner-2-1.png"
+                           alt="c"/>
                 </div>
             </section>
         </div>
     )
 }
-
