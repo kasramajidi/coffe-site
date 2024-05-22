@@ -14,6 +14,11 @@ module.exports = {
       },
       boxShadow: {
         "normal": "0px 6px 40px rgba(0,0,0,0.08)"
+      },
+      colors : {
+        "mani" : {
+          100 : "#EFEFF1",
+        }
       }
     },
   },

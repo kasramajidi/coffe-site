@@ -33,7 +33,7 @@ export default function navbar() {
     return (
         <div>
             {/* HEADER */}
-            <div className=" rounded-[50px] bg-zinc-200 flex justify-around items-center  w-[85%] h-20 m-auto mt-4">
+            <div className="text-zinc-700 rounded-[50px] bg-zinc-200 flex justify-around items-center  w-[85%] h-20 m-auto mt-4">
                 {/* nav and logo */}
                 <div className="flex items-center  group-hover:bg-sky-400">
                     <Image src="./img/Logo.svg" alt="" width={50} height={50}/>
