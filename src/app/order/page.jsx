@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Link from 'next/link';
 
 
-import {PhotoOne, PhotoTwo, PhotoThree} from '@/components/OrderImg';
+import { PhotoOne, PhotoTwo, PhotoThree } from '@/components/OrderImg';
 
 const Morabab = localFont({
   src: "../../components/fonts/Morabba/woff2/Morabba-Bold.woff2"
@@ -12,6 +12,10 @@ const Morabab = localFont({
 
 const Danab = localFont({
   src: "../../components/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2"
+})
+
+const Morabbalight = localFont({
+  src: "../../components/fonts/Morabba/woff2/Morabba-Light.woff2"
 })
 
 import CoffeeIcon from '@mui/icons-material/Coffee';
@@ -60,19 +64,106 @@ export default function Order() {
       {/* SECTION TWO */}
       <section className='py-10 mt-20'>
         <div className='flex items-center justify-between'>
-          <PhotoOne/>
+          <PhotoOne />
           <span className={`font-bold ${Danab.className}`}>انتخاب نوع و نژاد قهوه</span>
-          <Image src={'/img/order/Arrow_03.svg'} height={100} width={100} className='origin-top'/>
-          <PhotoTwo/>
+          <Image src={'/img/order/Arrow_03.svg'} height={100} width={100} className='origin-top' />
+          <PhotoTwo />
           <span className={`font-bold ${Danab.className}`}>تنظیم درصد رست و ترکیب</span>
-          <Image src={'/img/order/Arrow_03 (1).svg'} height={100} width={100} className='-rotate-180 -scale-x-100'/>
-          <PhotoThree/>
+          <Image src={'/img/order/Arrow_03 (1).svg'} height={100} width={100} className='-rotate-180 -scale-x-100' />
+          <PhotoThree />
           <span className={`font-bold ${Danab.className}`}>ثبت سفارش و تحویل بسته</span>
         </div>
       </section>
       {/* SECTION THREE */}
-      <section className='py-10 mt-20'>
-        
+      <section className='py-10 mt-20 bg-white rounded-2xl'>
+        <div className='flex items-center justify-evenly p-10'>
+          <div className='flex flex-col'>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد عربیکـــــا :</span>
+            <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>Kenya</span>
+              <span className={Morabbalight.className}>خواستگاه: کنیــا</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group-1.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>Colombia</span>
+              <span className={Morabbalight.className}>خواستگاه: کلمبیـــــا</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group-2.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>Peru</span>
+              <span className={Morabbalight.className}>خواستگاه: پـــرو</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+        </div>
+        <div className='flex items-center justify-evenly p-10'>
+          <div className='flex flex-col'>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد روبوســـتا :</span>
+            <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group-3.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>Indonesia</span>
+              <span className={Morabbalight.className}>خواستگاه: اندونــزی</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group-4.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>Vietnam</span>
+              <span className={Morabbalight.className}>خواستگاه: ویتنـــام</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+            <div>
+              <Image src={'/img/order/Mask-group-5.png'} width={100} height={100} alt='' />
+            </div>
+            <div className='flex flex-col mr-4'>
+              <span className={Danab.className}>India</span>
+              <span className={Morabbalight.className}>خواستگاه: هنـــد</span>
+              <span className={Morabbalight.className}>رست : مدیوم</span>
+            </div>
+          </div>
+        </div>
+        {/* SECTION THREE */}
+        <div className={'flex items-center gap-x-2 text-zinc-900 justify-center py-10'}>
+          <Image src={'/img/icon.svg'} alt={'dhd'} width={'38'} height={'38'}></Image>
+          <h4 className={`${Morabab.className} text-4xl`}>تنظیم ترکیبات قهوه</h4>
+          <Image className={'mt-5'} src={'/img/brag.svg'} alt={'ee'} width={'36'} height={'36'}></Image>
+        </div>
+        {/* SECTION FOURE */}
+        <div className='flex items-center justify-evenly p-10'>
+          <div className='flex flex-col'>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>درصد ترکیب عربیکا :</span>
+            <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>میزان قهوه عربیکا در ترکیب سفارشی خود را به درصد انتخاب نمایید .</span>
+          </div>
+          <div>
+          </div>
+
+        </div>
       </section>
     </div>
   )
