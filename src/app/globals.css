@@ -27,29 +27,37 @@ body {
 }
 
 .custom-css {
-    background: url("/img/Blog/post-4-1.jpg") no-repeat center center,rgba(0, 0, 0, 0.7);
+    background: url("/img/Blog/post-4-1.jpg") no-repeat center center, rgba(0, 0, 0, 0.7);
     background-size: cover;
     box-shadow: inset 0 0 60px 30px rgba(0, 0, 0, 0.8);
 }
+
 .custom-css2 {
-  background: url("/img/Blog/post-1.jpg") no-repeat center center;
-  background-size: cover;
+    background: url("/img/Blog/post-1.jpg") no-repeat center center;
+    background-size: cover;
     box-shadow: inset 0 0 60px 30px rgba(0, 0, 0, 0.8);
 }
+
 .custom-css3 {
     background: url("/img/Blog/post-2.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: inset 0 0 60px 30px rgba(0, 0, 0, 0.8);
 }
+
 .custom-css4 {
     background: url("/img/Blog/post-3-768x307.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: inset 0 0 60px 30px rgba(0, 0, 0, 0.8);
 }
+
 .custom-css5 {
     background: url("/img/Blog/perfium-3.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: inset 0 0 60px 30px rgba(0, 0, 0, 0.8);
 }
 
+.myback{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("/img/About-us/christina-rumpf-LMzwJDu6hTE-unsplash-1-min.jpg") no-repeat;
+    background-size: cover;
+}
 
