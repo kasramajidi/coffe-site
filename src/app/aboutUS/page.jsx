@@ -267,7 +267,7 @@ export default function AboutPage() {
                             <div className={'flex justify-between mt-10'}>
                                 <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
                                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-4-1.jpg"
+                                           src="/img/Blog/post-3-768x307.jpg"
                                            alt="c"/>
                                     <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                                         جدیدترین رندرهای شیائومی طراحی جذاب آن
@@ -289,7 +289,7 @@ export default function AboutPage() {
                                 </div>
                                 <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
                                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-4-1.jpg"
+                                           src="/img/Blog/post-1.jpg"
                                            alt="c"/>
                                     <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                                         جدیدترین رندرهای شیائومی طراحی جذاب آن
@@ -311,7 +311,7 @@ export default function AboutPage() {
                                 </div>
                                 <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
                                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-4-1.jpg"
+                                           src="/img/Blog/post-2.jpg"
                                            alt="c"/>
                                     <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                                         جدیدترین رندرهای شیائومی طراحی جذاب آن
