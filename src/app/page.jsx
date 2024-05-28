@@ -35,10 +35,6 @@ export default function page() {
     return (
         <div>
             <div className={`${Danareg.className} w-[85%] m-auto mt-12`}>
-                <Head>
-                    <link rel="stylesheet" href="../components/swiper-bundle.min.css"/>
-                </Head>
-                <Script src="../components/swiper-bundle.min.js" strategy="beforeInteractive"/>
                 {/* section 1 */}
                 <section className={'flex items-center justify-between'}>
                     {/* heading */}
@@ -542,7 +538,7 @@ export default function page() {
                     </Link>
                 </section>
                 {/* section 11 */}
-                <section className={'mt-20'}>
+                <section className={'mt-20 mb-12'}>
                     <div className={'flex items-center justify-center gap-x-2 text-zinc-900'}>
                         <Image src={'/img/icon.svg'} alt={'dhd'} width={'38'} height={'38'}></Image>
                         <h4 className={`${Morabab.className} text-4xl`}>آخرین مقالات وبلاگ</h4>
@@ -642,7 +638,6 @@ export default function page() {
                     </div>
                 </section>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
     )
 }

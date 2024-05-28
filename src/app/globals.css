@@ -60,4 +60,8 @@ body {
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("/img/About-us/christina-rumpf-LMzwJDu6hTE-unsplash-1-min.jpg") no-repeat;
     background-size: cover;
 }
+.footer-back{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.5) 100%), url("/img/About-us/footer-bg-min.jpg") no-repeat;
+    background-size: cover;
+}
 
