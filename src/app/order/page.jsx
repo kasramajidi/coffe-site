@@ -3,6 +3,7 @@ import Image from 'next/image'
 import localFont from "next/font/local";
 import Link from 'next/link';
 
+import CustomCombination from '@/components/CustomCombination';
 
 import { PhotoOne, PhotoTwo, PhotoThree } from '@/components/OrderImg';
 
@@ -63,16 +64,7 @@ export default function Order() {
       </section>
       {/* SECTION TWO */}
       <section className='py-10 mt-20'>
-        <div className='flex items-center justify-between'>
-          <PhotoOne />
-          <span className={`font-bold ${Danab.className}`}>انتخاب نوع و نژاد قهوه</span>
-          <Image src={'/img/order/Arrow_03.svg'} height={100} width={100} className='origin-top' />
-          <PhotoTwo />
-          <span className={`font-bold ${Danab.className}`}>تنظیم درصد رست و ترکیب</span>
-          <Image src={'/img/order/Arrow_03 (1).svg'} height={100} width={100} className='-rotate-180 -scale-x-100' />
-          <PhotoThree />
-          <span className={`font-bold ${Danab.className}`}>ثبت سفارش و تحویل بسته</span>
-        </div>
+        <CustomCombination/>
       </section>
       {/* SECTION THREE */}
       <section className='py-10 mt-20 bg-white rounded-2xl'>
@@ -81,7 +73,7 @@ export default function Order() {
             <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد عربیکـــــا :</span>
             <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group.png'} width={100} height={100} alt='' />
             </div>
@@ -91,7 +83,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-1.png'} width={100} height={100} alt='' />
             </div>
@@ -101,7 +93,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-2.png'} width={100} height={100} alt='' />
             </div>
@@ -117,7 +109,7 @@ export default function Order() {
             <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد روبوســـتا :</span>
             <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-3.png'} width={100} height={100} alt='' />
             </div>
@@ -127,7 +119,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-4.png'} width={100} height={100} alt='' />
             </div>
@@ -137,7 +129,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-gray-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-5.png'} width={100} height={100} alt='' />
             </div>
