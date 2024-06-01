@@ -37,7 +37,7 @@ export default function CallPage() {
           </div>
           {/* ADDRESS */}
           <div className='grid grid-cols-8 gap-4'>
-            <div className='shadow-xl w-auto rounded-lg bg-gray-200 flex items-center p-8 col-start-1 col-end-4 h-2/3'>
+            <div className='shadow-xl w-auto rounded-lg bg-zinc-200 flex items-center p-8 col-start-1 col-end-4 h-2/3'>
               <div>
                 <Image src={"./img/callus/email-svgrepo-com (1).svg"} width={50} height={50} alt='' className='p-1' />
               </div>
@@ -48,7 +48,7 @@ export default function CallPage() {
                 </div>
               </div>
             </div>
-            <div className='shadow-xl w-auto rounded-lg bg-gray-200 flex items-center p-8 col-start-4 col-end-7 h-2/3'>
+            <div className='shadow-xl w-auto rounded-lg bg-zinc-200 flex items-center p-8 col-start-4 col-end-7 h-2/3'>
               <div>
                 <Image src={"./img/callus/call-ringing-svgrepo-com (2).svg"} width={60} height={60} alt='' />
               </div>
@@ -59,7 +59,7 @@ export default function CallPage() {
             </div>
           </div>
           <div className='grid grid-cols-8 gap-4'>
-            <div className='shadow-xl w-auto rounded-lg bg-gray-200 flex items-center p-8 col-start-2 col-end-5 h-2/3'>
+            <div className='shadow-xl w-auto rounded-lg bg-zinc-200 flex items-center p-8 col-start-2 col-end-5 h-2/3'>
               <div>
                 <Image src={'./img/callus/map-marker-2-svgrepo-com.svg'} width={60} height={60} alt='' className='mr-1' />
               </div>
@@ -68,7 +68,7 @@ export default function CallPage() {
                 <span>تهران یافت اباد</span>
               </div>
             </div>
-            <div className='shadow-xl w-auto rounded-lg bg-gray-200 flex items-center p-8 col-start-5 col-end-8 h-2/3'>
+            <div className='shadow-xl w-auto rounded-lg bg-zinc-200 flex items-center p-8 col-start-5 col-end-8 h-2/3'>
               <div>
                 <Image src={'./img/callus/whatsapp-svgrepo-com.svg'} width={60} height={60} alt='' className='p-1' />
               </div>
@@ -93,7 +93,7 @@ export default function CallPage() {
 
       <section className={'m-24'}>
         <div className={Danareg.className}>
-          <form method='get' className='flex items-start flex-col bg-gray-300 p-10 rounded-lg w-96 h-auto absolute z-30 forrm'>
+          <form method='get' className='flex items-start flex-col bg-zinc-200 p-10 rounded-lg w-96 h-auto absolute z-30 forrm'>
             <span className='mb-5 text-sm font-bold'>پذیرای انتقادات و پیشنهادات شما هستیم.</span>
             <input type="text" placeholder='نام و نام خانوادگی :' className='p-2 rounded-2xl my-3 text-sm w-80 focus:outline-none' />
             <input type="email" placeholder='پست الکترونیکی :' className='p-2 rounded-2xl my-3 text-sm w-80 focus:outline-none' />
@@ -120,7 +120,7 @@ export default function CallPage() {
         <section>
           <div class="max-w-screen-xl mx-auto px-5 min-h-sceen my-10">
             <div class="grid divide-y divide-neutral-200 max-w-4xl mx-auto mt-8 gap-4 cursor-pointer">
-              <div class="py-5 rounded-2xl bg-gray-200">
+              <div class="py-5 rounded-2xl bg-zinc-200">
                 <details class="group">
                   <summary class="flex justify-between items-center font-medium cursor-pointer list-none px-4">
                     <span className={Danareg.className}> آیا امکان خرید به صورت حضوری وجود دارد؟</span>
@@ -136,7 +136,7 @@ export default function CallPage() {
                   </div>
                 </details>
               </div>
-              <div class="py-5 rounded-2xl bg-gray-200">
+              <div class="py-5 rounded-2xl bg-zinc-200">
                 <details class="group">
                   <summary class="flex justify-between items-center font-medium cursor-pointer list-none px-4">
                     <span className={Danareg.className}> مکان تعویض یا پس دادن کالا وجود دارد؟</span>
@@ -152,7 +152,7 @@ export default function CallPage() {
                   </div>
                 </details>
               </div>
-              <div class="py-5 rounded-2xl bg-gray-200">
+              <div class="py-5 rounded-2xl bg-zinc-200">
                 <details class="group">
                   <summary class="flex justify-between items-center font-medium cursor-pointer list-none px-4">
                     <span className={Danareg.className}> آیا اصالت کالا ها تضمین میشود؟</span>

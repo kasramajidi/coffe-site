@@ -21,7 +21,7 @@ export default function AccountPage() {
         {/* SECTION LOG IN */}
         <div className=' flex flex-col w-[40%]'>
           <h1 className={`${Danab.className} py-5 font-bold text-xl`}>عضویت</h1>
-          <form method='get' className='flex flex-col items-start justify-center p-5 bg-gray-300 rounded-2xl'>
+          <form method='get' className='flex flex-col items-start justify-center p-5 bg-zinc-200 rounded-2xl'>
             <label htmlFor="firstname" className={`${Morabbalight.className} py-3`}>نام کاربری <span className='text-red-600'>*</span></label>
             <input type="text" name='firstname' className='w-full rounded-2xl py-1' />
 
@@ -43,7 +43,7 @@ export default function AccountPage() {
         {/* SECTION SING IN  */}
         <div className='flex flex-col w-[40%]'>
           <h1 className={`${Danab.className} py-5 font-bold text-xl`}>ورود</h1>
-          <form method='get' className='flex flex-col items-start justify-center p-5 bg-gray-300 rounded-2xl'>
+          <form method='get' className='flex flex-col items-start justify-center p-5 bg-zinc-200 rounded-2xl'>
 
             <label htmlFor="firstname" className={`${Morabbalight.className} py-3`}>نام کاربری یا آدرس ایمیل<span className='text-red-600'>*</span></label>
             <input type="text" name='firstname' className='w-full rounded-2xl py-1' />
