@@ -163,7 +163,7 @@ export default function AboutPage() {
                     {/* section 5 */}
                     <section className={'flex justify-between mt-20'}>
                         {/* membership */}
-                        <div className={'bg-white w-[412px] h-[166px rounded-2xl px-3'}>
+                        <div className={'bg-white w-[412px] h-[166px] rounded-2xl px-3'}>
                             <div className={'flex justify-between items-center pt-4'}>
                                 <div className={'flex items-center'}>
                                     <Image className={'w-[72px] h-[72px] rounded-full'} width={1000} height={1000}
