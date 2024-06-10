@@ -26,7 +26,7 @@ export default function ShopPage() {
         <div className={`${Danareg.className} w-[85%] m-auto mt-12`}>
             <div className={'flex gap-x-8'}>
                 {/* section 1 ( side bar ) */}
-                <section className={'w-[25%]'}>
+                <section className={'w-[25%] h-[424px] sticky top-2'}>
                     <input type="search" placeholder={"جستجو..."}
                            className={"h-11 w-full mb-4 pr-2 rounded-xl text-black "}/>
                     <Link href={"/"}
