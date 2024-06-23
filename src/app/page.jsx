@@ -1,8 +1,10 @@
-import React from 'react'
+'use client';
+import React, {useState} from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import Head from 'next/head';
 import Script from 'next/script';
+
 
 import Articles from '@/components/articles';
 import Product from '@/components/Product';
@@ -30,7 +32,15 @@ const Danareg = localFont({
 import Check from '@mui/icons-material/CheckBoxOutlined';
 
 
+
 export default function page() {
+
+    const [mainImage, setMainImage] = useState('/img/main/hero-1-min.png');
+
+    const HandelTouchClick = (src) =>{
+        setMainImage(src)
+    }
+
     return (
         <div>
             <div className={`${Danareg.className} w-[85%] m-auto mt-12`}>
@@ -48,12 +58,12 @@ export default function page() {
                             مورد نیاز میباشد .</p>
                         {/* btn */}
                         <div className={'flex mt-10 gap-x-5'}>
-                            <Link href={"/"}
+                            <Link href={"/shop"}
                                 className={'bg-emerald-700 rounded-3xl flex items-center justify-center text-white w-[136px] h-[43px] text-sm'}>
                                 <Shop className={''} />
                                 <span className={'mr-1'}>خرید کنید</span>
                             </Link>
-                            <Link href={"/"}
+                            <Link href={"/order"}
                                 className={'bg-white rounded-3xl flex items-center justify-center text-emerald-600 w-[136px] h-[43px] text-sm'}>
                                 <Shop className={''} />
                                 <span className={'mr-1'}>ترکیب سفارشی</span>
@@ -63,13 +73,16 @@ export default function page() {
                         <div className={'flex mt-10 items-center gap-x-4'}>
                             <Image className="h-[120px] w-[110px]  cursor-pointer" width={'10000'} height={'2000'}
                                 src="/img/main/hero-3-1.png"
-                                alt="c" />
+                                alt="c" 
+                                onClick={() => HandelTouchClick("/img/main/hero-3-1.png")}/>
                             <Image className="h-[120px] w-[110px] cursor-pointer " width={'10000'} height={'2000'}
                                 src="/img/main/hero-2-1.png"
-                                alt="c" />
+                                alt="c" 
+                                onClick={() => HandelTouchClick("/img/main/hero-2-1.png")}/>
                             <Image className="h-[120px] w-[110px] cursor-pointer " width={'10000'} height={'2000'}
                                 src="/img/main/hero-1-min.png"
-                                alt="c" />
+                                alt="c" 
+                                onClick={() => HandelTouchClick("/img/main/hero-1-min.png")}/>
                             <Image className="h-[130px] w-[130px] cursor-pointer mr-20  " width={'10000'}
                                 height={'2000'}
                                 src="/img/main/test.svg"
@@ -80,7 +93,7 @@ export default function page() {
                     {/* baner */}
                     <div className={'w-[50%]'}>
                         <Image className="h-[550px] w-[640px] " width={'10000'} height={'2000'}
-                            src="/img/main/hero-1-min.png"
+                            src={mainImage}
                             alt="c" />
                     </div>
                 </section>
