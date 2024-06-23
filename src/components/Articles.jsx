@@ -11,7 +11,12 @@ const Danab = localFont({
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import Link from 'next/link';
 
+const link = [
+    {url: "/Article", title: "Article"}
+]
+
 export default function Articles() {
+
     return (
         <div>
             <div className={'flex justify-between mt-10'}>
@@ -19,7 +24,7 @@ export default function Articles() {
                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
                         src="/img/Blog/post-3-768x307.jpg"
                         alt="c"/>
-                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
+                    <Link href={'/Article'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                         جدیدترین رندرهای شیائومی طراحی جذاب آن
                     </Link>
                     <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
@@ -32,7 +37,7 @@ export default function Articles() {
                             <CalendarMonthOutlinedIcon className={'text-sm'} />
                             <span> 16 مهر 1403 </span>
                         </div>
-                        <Link href={'/'}
+                        <Link href={'/Article'}
                             className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
                             کنید
                         </Link>
@@ -42,7 +47,7 @@ export default function Articles() {
                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
                         src="/img/Blog/post-1.jpg"
                         alt="c" />
-                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
+                    <Link href={'/Article'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                         جدیدترین رندرهای شیائومی طراحی جذاب آن
                     </Link>
                     <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
@@ -55,7 +60,7 @@ export default function Articles() {
                             <CalendarMonthOutlinedIcon className={'text-sm'} />
                             <span> 16 مهر 1403 </span>
                         </div>
-                        <Link href={'/'}
+                        <Link href={'/Article'}
                             className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
                             کنید
                         </Link>
@@ -65,7 +70,7 @@ export default function Articles() {
                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
                         src="/img/Blog/post-2.jpg"
                         alt="c" />
-                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
+                    <Link href={'/Article'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                         جدیدترین رندرهای شیائومی طراحی جذاب آن
                     </Link>
                     <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
@@ -78,7 +83,7 @@ export default function Articles() {
                             <CalendarMonthOutlinedIcon className={'text-sm'} />
                             <span> 16 مهر 1403 </span>
                         </div>
-                        <Link href={'/'}
+                        <Link href={'/Article'}
                             className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
                             کنید</Link>
                     </div>
@@ -87,7 +92,7 @@ export default function Articles() {
                     <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
                         src="/img/Blog/post-4-1.jpg"
                         alt="c" />
-                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
+                    <Link href={'/Article'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
                         جدیدترین رندرهای شیائومی طراحی جذاب آن
                     </Link>
                     <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
@@ -100,7 +105,7 @@ export default function Articles() {
                             <CalendarMonthOutlinedIcon className={'text-sm'} />
                             <span> 16 مهر 1403 </span>
                         </div>
-                        <Link href={'/'}
+                        <Link href={'/Article'}
                             className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
                             کنید
                         </Link>

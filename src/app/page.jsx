@@ -141,12 +141,12 @@ export default function page() {
                             </p>
                             {/* btn */}
                             <div className={'flex mt-8 gap-x-5'}>
-                                <Link href={"/"}
+                                <Link href={"/shop"}
                                     className={'bg-emerald-700 rounded-3xl flex items-center justify-center text-white w-[136px] h-[43px] text-sm'}>
                                     <Shop className={''} />
                                     <span className={'mr-1'}>فروشگاه ما</span>
                                 </Link>
-                                <Link href={"/"}
+                                <Link href={"/callUs"}
                                     className={'bg-white rounded-3xl flex items-center justify-center text-emerald-600 w-[136px] h-[43px] text-sm'}>
                                     <Shop className={''} />
                                     <span className={'mr-1'}>سوالی دارید؟</span>
@@ -222,7 +222,7 @@ export default function page() {
                     <Product />
                     <Product />
                     <div className={'m-auto mt-14 flex justify-center '}>
-                        <Link href={'/'}
+                        <Link href={'/shop'}
                             className={'bg-gray-200 h-[39px] rounded-2xl text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all w-[137px] flex items-center justify-center'}>
                             <span>مشاهده همه</span>
                         </Link>
@@ -243,7 +243,7 @@ export default function page() {
                 </section>
                 {/* section 10 */}
                 <section className={'m-auto mt-11 flex justify-center '}>
-                    <Link href={'/'}
+                    <Link href={'/order'}
                         className={'hover:bg-gray-200 h-[39px] rounded-2xl hover:text-emerald-600 bg-emerald-600 text-white transition-all w-[137px] flex items-center justify-center'}>
                         <span>سفارش دهید</span>
                     </Link>
