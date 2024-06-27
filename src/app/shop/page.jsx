@@ -38,7 +38,7 @@ const products = [
 
 export default function ShopPage() {
     const [currentPage, setCurrentPage] = useState(0);
-    const itemsPerPage = 3;
+    const itemsPerPage = 2;
 
     const handlePageChange = (pageNumber) => {
         if (pageNumber >= 0 && pageNumber < Math.ceil(products.length / itemsPerPage)) {
@@ -86,7 +86,7 @@ export default function ShopPage() {
                         </Link>
                     </section>
                     {/* products */}
-                    <div className='products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+                    <div className='flex items-center justify-center flex-col'>
                         {currentItems.map((product) => (
                             <Product key={product.id} product={product} />
                         ))}
