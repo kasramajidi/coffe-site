@@ -26,19 +26,19 @@ const Danab = localFont({
 });
 
 const products = [
-    { id: 1, name: "Product 1", src: '/img/main/product-7-min.png' },
-    { id: 2, name: "Product 2", src: '/img/main/product-3.png' },
-    { id: 3, name: "Product 3", src: '/img/main/product-2-min.png' },
-    { id: 4, name: "Product 4", src: '/img/main/product-1.png' },
-    { id: 5, name: "Product 5", src: '/img/main/product-7-min.png' },
-    { id: 6, name: "Product 6", src: '/img/main/product-3.png' },
-    { id: 7, name: "Product 7", src: '/img/main/product-2-min.png' },
-    { id: 8, name: "Product 8", src: '/img/main/product-1.png' },
+    { id: 1, name: "Product 1" },
+    { id: 2, name: "Product 2" },
+    { id: 3, name: "Product 3"},
+    { id: 4, name: "Product 4" },
+    { id: 5, name: "Product 5" },
+    { id: 6, name: "Product 6" },
+    { id: 7, name: "Product 7" },
+    { id: 8, name: "Product 8" },
 ];
 
 export default function ShopPage() {
     const [currentPage, setCurrentPage] = useState(0);
-    const itemsPerPage = 2;
+    const itemsPerPage = 3;
 
     const handlePageChange = (pageNumber) => {
         if (pageNumber >= 0 && pageNumber < Math.ceil(products.length / itemsPerPage)) {
@@ -86,15 +86,15 @@ export default function ShopPage() {
                         </Link>
                     </section>
                     {/* products */}
-                    <div className='flex items-center justify-center flex-col'>
+                    <div className='flex flex-col items-center justify-center'>
                         {currentItems.map((product) => (
-                            <Product key={product.id} product={product} />
+                            <Product key={product.id}/>
                         ))}
                     </div>
                     {/* next-privus */}
                     <section className={'mb-20 mt-5'}>
                         <div className={'w-full h-[47px] bg-white rounded-2xl flex items-center justify-center gap-x-6'}>
-                            <Pagination 
+                            <Pagination
                                 currentPage={currentPage}
                                 totalPages={Math.ceil(products.length / itemsPerPage)}
                                 onPageChange={handlePageChange}
