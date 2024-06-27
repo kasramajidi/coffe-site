@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,27 +26,52 @@ const Danab = localFont({
 });
 
 const products = [
-    { id: 1, name: "Product 1" },
-    { id: 2, name: "Product 2" },
-    { id: 3, name: "Product 3"},
-    { id: 4, name: "Product 4" },
-    { id: 5, name: "Product 5" },
-    { id: 6, name: "Product 6" },
-    { id: 7, name: "Product 7" },
-    { id: 8, name: "Product 8" },
+    { id: 1, name: "بسته 60 عددی شکلات تلخ قهوه ویولتا فرمند ۵۵ گرمی", src: '/img/main/product-7-min.png', price: '140,000 تومان', url: '/Data' },
+    { id: 2, name: "چای ساز برقی استیل بیشل مدل BLTM009 – bishel‏", src: '/img/main/product-3.png', price: '140,000 تومان', url: '/Data' },
+    { id: 3, name: "ماگ در دار سیلیکونی با بدنه ی سرامیکی طرح استارباکس", src: '/img/main/product-2-min.png', price: '140,000 تومان', url: '/Data' },
+    { id: 4, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-5-min.png', price: '140,000 تومان', url: '/Data' },
+    { id: 5, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-4-min.png', price: '140,000 تومان', url: '/Data' },
+    { id: 6, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-8-min.png', price: '140,000 تومان', url: '/Data' },
+    { id: 7, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-1.png', price: '140,000 تومان', url: '/Data' },
+    { id: 8, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-6-min.png', price: '140,000 تومان', url: '/Data' },
+
+    // محصولات بیشتر در صورت نیاز اضافه کنید
 ];
+
+const shuffleArray = (array) => {
+    let currentIndex = array.length, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex !== 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+};
 
 export default function ShopPage() {
     const [currentPage, setCurrentPage] = useState(0);
-    const itemsPerPage = 3;
+    const [shuffledProducts, setShuffledProducts] = useState([]);
+
+    const itemsPerPage = 6;
+
+    useEffect(() => {
+        setShuffledProducts(shuffleArray([...products])); // Shuffle the products once on component mount
+    }, []);
 
     const handlePageChange = (pageNumber) => {
-        if (pageNumber >= 0 && pageNumber < Math.ceil(products.length / itemsPerPage)) {
+        if (pageNumber >= 0 && pageNumber < Math.ceil(shuffledProducts.length / itemsPerPage)) {
             setCurrentPage(pageNumber);
         }
     };
 
-    const currentItems = products.slice(
+    const currentItems = shuffledProducts.slice(
         currentPage * itemsPerPage,
         (currentPage + 1) * itemsPerPage
     );
@@ -86,9 +111,9 @@ export default function ShopPage() {
                         </Link>
                     </section>
                     {/* products */}
-                    <div className='flex flex-col items-center justify-center'>
+                    <div className='products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                         {currentItems.map((product) => (
-                            <Product key={product.id}/>
+                            <Product key={product.id} product={product} />
                         ))}
                     </div>
                     {/* next-privus */}
@@ -96,7 +121,7 @@ export default function ShopPage() {
                         <div className={'w-full h-[47px] bg-white rounded-2xl flex items-center justify-center gap-x-6'}>
                             <Pagination
                                 currentPage={currentPage}
-                                totalPages={Math.ceil(products.length / itemsPerPage)}
+                                totalPages={Math.ceil(shuffledProducts.length / itemsPerPage)}
                                 onPageChange={handlePageChange}
                             />
                         </div>
@@ -106,4 +131,6 @@ export default function ShopPage() {
         </div>
     );
 }
+
+
 
