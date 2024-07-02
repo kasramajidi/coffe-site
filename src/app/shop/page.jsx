@@ -3,10 +3,8 @@ import React, { useState, useEffect } from 'react';
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
-
 import Shop from "@mui/icons-material/StorefrontOutlined";
-
-import Product from '@/components/Product';
+import ProductShop from '@/components/ProductShop';
 import Pagination from '@/components/Pagination';
 
 const MorabaLight = localFont({
@@ -26,32 +24,23 @@ const Danab = localFont({
 });
 
 const products = [
-    { id: 1, name: "بسته 60 عددی شکلات تلخ قهوه ویولتا فرمند ۵۵ گرمی", src: '/img/main/product-7-min.png', price: '140,000 تومان', url: '/Data' },
-    { id: 2, name: "چای ساز برقی استیل بیشل مدل BLTM009 – bishel‏", src: '/img/main/product-3.png', price: '140,000 تومان', url: '/Data' },
-    { id: 3, name: "ماگ در دار سیلیکونی با بدنه ی سرامیکی طرح استارباکس", src: '/img/main/product-2-min.png', price: '140,000 تومان', url: '/Data' },
-    { id: 4, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-5-min.png', price: '140,000 تومان', url: '/Data' },
-    { id: 5, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-4-min.png', price: '140,000 تومان', url: '/Data' },
-    { id: 6, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-8-min.png', price: '140,000 تومان', url: '/Data' },
-    { id: 7, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-1.png', price: '140,000 تومان', url: '/Data' },
-    { id: 8, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-6-min.png', price: '140,000 تومان', url: '/Data' },
-
-    // محصولات بیشتر در صورت نیاز اضافه کنید
+    { id: 1, name: "بسته 60 عددی شکلات تلخ قهوه ویولتا فرمند ۵۵ گرمی", src: '/img/main/product-7-min.png', price: '140,000 تومان' },
+    { id: 2, name: "دانه قهوه ترکیبی FALL Blend اصل کلمبیا مقدار 250 گرم", src: '/img/main/product-3.png', price: '140,000 تومان'},
+    { id: 3, name: "ماگ در دار سیلیکونی با بدنه ی سرامیکی طرح استارباکس", src: '/img/main/product-2-min.png', price: '140,000 تومان'},
+    { id: 4, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-1.png', price: '140,000 تومان'},
+    { id: 5, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-4-min.png', price: '140,000 تومان'},
+    { id: 6, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-5-min.png', price: '140,000 تومان'},
+    { id: 7, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-6-min.png', price: '140,000 تومان'},
+    { id: 8, name: "قهوه ساز برقی سینبو مدل SCM 2928 با بدنه سرامیکی", src: '/img/main/product-8-min.png', price: '140,000 تومان'},
 ];
 
 const shuffleArray = (array) => {
     let currentIndex = array.length, randomIndex;
-
-    // While there remain elements to shuffle...
     while (currentIndex !== 0) {
-
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
-
-        // And swap it with the current element.
         [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
     }
-
     return array;
 };
 
@@ -79,7 +68,6 @@ export default function ShopPage() {
     return (
         <div className={`${Danareg.className} w-[85%] m-auto mt-12`}>
             <div className={'flex gap-x-8'}>
-                {/* section 1 ( side bar ) */}
                 <section className={'w-[25%] h-[424px] sticky top-2'}>
                     <input type="search" placeholder={"جستجو..."}
                         className={"h-11 w-full mb-4 pr-2 rounded-xl text-black "} />
@@ -102,7 +90,6 @@ export default function ShopPage() {
                     </Link>
                 </section>
                 <div className={'flex flex-col w-[73%]'}>
-                    {/* section 2 */}
                     <section className={'w-full rounded-xl px-4 flex justify-between items-center bg-white h-[62px]'}>
                         <h3 className={`text-gray-700 text-xl ${Morabab.className}`}>فروشگاه</h3>
                         <Link href={"/"}
@@ -110,16 +97,14 @@ export default function ShopPage() {
                             <span>اعمال فیلتر</span>
                         </Link>
                     </section>
-                    {/* products */}
                     <div className='products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                         {currentItems.map((product) => (
-                            <Product key={product.id} product={product} />
+                            <ProductShop key={product.id} product={product} />
                         ))}
                     </div>
-                    {/* next-privus */}
                     <section className={'mb-20 mt-5'}>
                         <div className={'w-full h-[47px] bg-white rounded-2xl flex items-center justify-center gap-x-6'}>
-                            <Pagination
+                            <Pagination 
                                 currentPage={currentPage}
                                 totalPages={Math.ceil(shuffledProducts.length / itemsPerPage)}
                                 onPageChange={handlePageChange}
@@ -131,6 +116,3 @@ export default function ShopPage() {
         </div>
     );
 }
-
-
-

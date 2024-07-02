@@ -7,7 +7,7 @@ import Script from 'next/script';
 
 
 import Articles from '@/components/articles';
-import Product from '@/components/Product';
+import Product from '@/components/product';
 import AboutTea from '@/components/AboutTea';
 import CustomCombination from '@/components/CustomCombination';
 
