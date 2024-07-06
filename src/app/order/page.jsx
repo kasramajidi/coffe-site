@@ -43,12 +43,12 @@ export default function Order() {
           </p>
           { /* buttons */}
           <div className={'flex mt-10 gap-x-5'}>
-            <Link href={"/"}
+            <Link href={"/order"}
               className={'bg-emerald-700 rounded-3xl flex items-center justify-center text-white w-[136px] h-[43px] text-sm'}>
               <CoffeeIcon className={''} />
               <span className={'mr-1 font-bold'}>بزن بریم</span>
             </Link>
-            <Link href={"/"}
+            <Link href={"/callUs"}
               className={'bg-white rounded-3xl flex items-center justify-center text-emerald-600 w-[136px] h-[43px] text-sm'}>
               <HelpOutlineOutlinedIcon className={''} />
               <span className={'mr-1'}>سوالی دارید؟!</span>

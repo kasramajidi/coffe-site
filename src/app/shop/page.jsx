@@ -45,7 +45,7 @@ const shuffleArray = (array) => {
 };
 
 const categories = ['دسته بندی محصولات...', 'بدون دسته بندی', 'چایی ساز', 'شکلات', 'قهوه', 'قهوه ساز', 'ماگ'];
-const brand = ['برند محصولات', 'رویوستا', 'عربیکا'];
+const brand = ['برند محصولات', 'روبوستا', 'عربیکا'];
 
 export default function ShopPage() {
     const [currentPage, setCurrentPage] = useState(0);
@@ -156,7 +156,7 @@ export default function ShopPage() {
                                 {brand.map((brands, index) => (
                                     <div
                                         key={index}
-                                        className={'px-6 px-2 cursor-pointer hover:bg-gray-200'}
+                                        className={'px-4 py-2 cursor-pointer hover:bg-gray-200'}
                                         onClick={() => handleBrandChange(brands)}
                                     >
                                         {brands}
