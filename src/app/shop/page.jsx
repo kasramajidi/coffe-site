@@ -61,7 +61,7 @@ export default function ShopPage() {
     const itemsPerPage = 6;
 
     useEffect(() => {
-        setShuffledProducts(shuffleArray([...products])); // Shuffle the products once on component mount
+        setShuffledProducts(shuffleArray([...products])); 
     }, []);
 
     const handlePageChange = (pageNumber) => {
