@@ -255,7 +255,7 @@ export default function WeblogPage() {
             </section>
             { /* section 3 */}
             <section className={'mt-8 mb-10'}>
-                <div className={'products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'}>
+                <div className={'products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'}>
                     {currentItems.map((product) => (
                         <WeblogProduct key={product.id} product={product} />
                     ))}
