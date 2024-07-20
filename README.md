@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2 align="center">سلام 🖐 من کسری مجیدی هستم</h2>
+<p align="center">
+  برنامه نویس فرانت اند  ❤️ دانشجوی رشته مهندسی کامپیوتر 👨‍💻 و عاشق دنیای صفر و یک ✌️
+</p>
+<br/>
+<p align="center">
+  این سایت متعلق به کسانی است که فروشنده قهوه هستند. من این سایت را با کمک دوست عزیزم مانی حسینی انجام دادم.
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<h2 align"right">ابزار هایی که استفاده می‌کنم 💪</h2>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+<h2 align="right">الان دارم با اینا کار می‌کنم 👨‍💻</h2>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h3 align="left">🖥 JavaScript | 80%</h3> <img width="400px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br />
+
+<h3 align="left">🖥 React Js | 80%</h3> <img width="400px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
+
+<br/>
+
+<h3 align="left">🖥 next js | 60%</h3> <img width="300px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
+
+<br/>
+
+<h3 align="left">🖥 type script | 30%</h3> <img width="150px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
+
+<br/>
+
+<h3 align="left">🖥 tailwind | 80%</h3> <img width="400px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
+
+<br/>
+
+<h3 align="left">🖥 bootstrap | 80%</h3> <img width="400px" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/bar.png?raw=true" />
+
+<h2 align="right">تماس با من 📞</h2>
+<a href="https://instagram.com/kasramajidy81"><img width="50px" height="50px" align="left" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/icons8-instagram-96.png?raw=true" alt="Instagram" /></a>
+<a href="https://t.me/kasra815"><img width="50px" height="50px"  align="left" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/icons8-telegram-96.png?raw=true" alt="Telegram" /></a>
+<a href="https://mail.google.com/kasramajidy81@gmail.com"><img width="50px" height="50px"  align="left"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFWyZZy48Io2iEllPm9IiDJBQMRcwrSFebKloJfA8cWQPCK1Ma9RYTDuaribVV0SXOok&usqp=CAU" alt="email" /></a>
+
+<br />
+
+<h2 align="right">تماس با هم تیمی 📞</h2>
+<a href="https://instagram.com/kasramajidy81"><img width="50px" height="50px" align="left" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/icons8-instagram-96.png?raw=true" alt="Instagram" /></a>
+<a href="https://t.me/kasra815"><img width="50px" height="50px"  align="left" src="https://github.com/sabzlearn-ir/sabzlearn-ir/blob/main/icons8-telegram-96.png?raw=true" alt="Telegram" /></a>
+<a href="https://mail.google.com/kasramajidy81@gmail.com"><img width="50px" height="50px"  align="left"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFWyZZy48Io2iEllPm9IiDJBQMRcwrSFebKloJfA8cWQPCK1Ma9RYTDuaribVV0SXOok&usqp=CAU" alt="email" /></a>
+
+<img align="center" src="https://raw.githubusercontent.com/imrrobat/imrrobat/d1b244e170d2b75fdda3efd499eaaf163f7a617c/images/github-contribution-grid-snake.svg" />
+
