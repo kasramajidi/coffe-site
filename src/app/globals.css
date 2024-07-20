@@ -65,3 +65,10 @@ body {
     background-size: cover;
 }
 
+input[type="range"]::-webkit-slider-thumb {
+    @apply w-8 h-8 bg-green-700 rounded-full cursor-pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    @apply w-8 h-8 bg-green-700 rounded-full cursor-pointer;
+  }

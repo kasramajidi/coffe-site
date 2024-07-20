@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import Head from 'next/head';
@@ -37,7 +37,7 @@ export default function page() {
 
     const [mainImage, setMainImage] = useState('/img/main/hero-1-min.png');
 
-    const HandelTouchClick = (src) =>{
+    const HandelTouchClick = (src) => {
         setMainImage(src)
     }
 
@@ -73,16 +73,16 @@ export default function page() {
                         <div className={'flex mt-10 items-center gap-x-4'}>
                             <Image className="h-[120px] w-[110px]  cursor-pointer" width={'10000'} height={'2000'}
                                 src="/img/main/hero-3-1.png"
-                                alt="c" 
-                                onClick={() => HandelTouchClick("/img/main/hero-3-1.png")}/>
+                                alt="c"
+                                onClick={() => HandelTouchClick("/img/main/hero-3-1.png")} />
                             <Image className="h-[120px] w-[110px] cursor-pointer " width={'10000'} height={'2000'}
                                 src="/img/main/hero-2-1.png"
-                                alt="c" 
-                                onClick={() => HandelTouchClick("/img/main/hero-2-1.png")}/>
+                                alt="c"
+                                onClick={() => HandelTouchClick("/img/main/hero-2-1.png")} />
                             <Image className="h-[120px] w-[110px] cursor-pointer " width={'10000'} height={'2000'}
                                 src="/img/main/hero-1-min.png"
-                                alt="c" 
-                                onClick={() => HandelTouchClick("/img/main/hero-1-min.png")}/>
+                                alt="c"
+                                onClick={() => HandelTouchClick("/img/main/hero-1-min.png")} />
                             <Image className="h-[130px] w-[130px] cursor-pointer mr-20  " width={'10000'}
                                 height={'2000'}
                                 src="/img/main/test.svg"
@@ -256,7 +256,8 @@ export default function page() {
                         <Image className={'mt-5'} src={'/img/brag.svg'} alt={'ee'} width={'36'}
                             height={'36'}></Image>
                     </div>
-                    <Articles />
+                    <Articles/>
+                    <Articles/>
                 </section>
             </div>
         </div>

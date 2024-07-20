@@ -69,7 +69,7 @@ export default function WeblogPage() {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [currentPage, setCurrentPage] = useState(0);
     const [shuffledProducts, setShuffledProducts] = useState([]);
-    const itemsPerPagem = 6;
+    const itemsPerPagem = 8;
 
     useEffect(() => {
         setShuffledProducts(shuffleArray([...products]));

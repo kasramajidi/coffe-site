@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import localFont from "next/font/local";
@@ -6,6 +7,7 @@ import Link from 'next/link';
 import CustomCombination from '@/components/CustomCombination';
 
 import { PhotoOne, PhotoTwo, PhotoThree } from '@/components/OrderImg';
+import Range from '@/components/range'
 
 const Morabab = localFont({
   src: "../../components/fonts/Morabba/woff2/Morabba-Bold.woff2"
@@ -22,7 +24,10 @@ const Morabbalight = localFont({
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 
+
 export default function Order() {
+
+
   return (
     <div className=' w-[85%] m-auto mt-20'>
       {/* section 1 */}
@@ -64,7 +69,7 @@ export default function Order() {
       </section>
       {/* SECTION TWO */}
       <section className='py-10 mt-20'>
-        <CustomCombination/>
+        <CustomCombination />
       </section>
       {/* SECTION THREE */}
       <section className='py-10 mt-20 bg-white rounded-2xl'>
@@ -73,7 +78,7 @@ export default function Order() {
             <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد عربیکـــــا :</span>
             <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group.png'} width={100} height={100} alt='' />
             </div>
@@ -83,7 +88,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-1.png'} width={100} height={100} alt='' />
             </div>
@@ -93,7 +98,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-2.png'} width={100} height={100} alt='' />
             </div>
@@ -109,7 +114,7 @@ export default function Order() {
             <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>نژاد روبوســـتا :</span>
             <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>در اینجا میبایست نژاد قهوه عربیکا خود را در بین گزینه های مقابل انتخاب نمایید.</span>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-3.png'} width={100} height={100} alt='' />
             </div>
@@ -119,7 +124,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-4.png'} width={100} height={100} alt='' />
             </div>
@@ -129,7 +134,7 @@ export default function Order() {
               <span className={Morabbalight.className}>رست : مدیوم</span>
             </div>
           </div>
-          <div className='flex items-center bg-zinc-200 p-5 rounded-3xl'>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
             <div>
               <Image src={'/img/order/Mask-group-5.png'} width={100} height={100} alt='' />
             </div>
@@ -149,12 +154,52 @@ export default function Order() {
         {/* SECTION FOURE */}
         <div className='flex items-center justify-evenly p-10'>
           <div className='flex flex-col'>
-            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>درصد ترکیب عربیکا :</span>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>درصد ترکیب عربیکا:</span>
             <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>میزان قهوه عربیکا در ترکیب سفارشی خود را به درصد انتخاب نمایید .</span>
           </div>
-          <div>
+          <Range />
+        </div>
+        <div className='flex items-center justify-evenly p-10'>
+          <div className='flex flex-col'>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>درصد ترکیب روبوستا:</span>
+            <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>میزان قهوه روبوستا در ترکیب سفارشی خود را به درصد انتخاب نمایید .</span>
           </div>
-
+          <Range />
+        </div>
+        <div className='flex items-center justify-evenly p-10'>
+          <div className='flex flex-col'>
+            <span className={`font-bold text-green-600 text-3xl ${Morabab.className}`}>وزن بسته قهوه شما :</span>
+            <span className={`text-justify w-64 mt-4 text-sm ${Danab.className}`}>وزن بسته ترکیب سفارشی خود را از بین گزینه های مقابل انتخاب نمایید .</span>
+          </div>
+          <div className='flex items-center justify-center mr-20'>
+            <div className='flex items-center bg-zinc-100 p-5 rounded-3xl'>
+              <div>
+                <Image src={'/img/order/Group-72.png'} width={100} height={100} alt='' />
+              </div>
+              <div className='flex flex-col mr-4'>
+                <span className={Danab.className}>250 گرم</span>
+                <span className={`${Morabbalight.className} mt-5`}>قهوه عربیکا و روبوستا</span>
+              </div>
+            </div>
+          </div>
+          <div className='flex items-center bg-zinc-100 p-5 rounded-3xl mr-20'>
+              <div>
+                <Image src={'/img/order/Group-72.png'} width={100} height={100} alt='' />
+              </div>
+              <div className='flex flex-col mr-4'>
+                <span className={Danab.className}>150 گرم</span>
+                <span className={`${Morabbalight.className} mt-5`} >قهوه عربیکا و روبوستا</span>
+              </div>
+            </div>
+            <div className='flex items-center bg-zinc-100 p-5 rounded-3xl mr-20'>
+              <div>
+                <Image src={'/img/order/Group-72.png'} width={100} height={100} alt='' />
+              </div>
+              <div className='flex flex-col mr-4'>
+                <span className={Danab.className}>100 گرم</span>
+                <span className={`${Morabbalight.className} mt-5`}>قهوه عربیکا و روبوستا</span>
+              </div>
+            </div>
         </div>
       </section>
     </div>

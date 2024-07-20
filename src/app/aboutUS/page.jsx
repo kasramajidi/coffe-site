@@ -148,7 +148,7 @@ export default function AboutPage() {
                 </section>
             </div>
             {/* section span */}
-            <section className={'w-full h-[450px] bg-zinc-900  mt-[-175px]'}>
+            <section className={'w-full h-[600px] bg-zinc-900  mt-[-175px] '}>
                 {/* section main */}
                 <div className={' w-[85%] m-auto'}>
                     {/* section 4 */}
@@ -235,129 +235,8 @@ export default function AboutPage() {
                     </section>
                 </div>
                 {/* section span */}
-                <div className="w-full mt-[-110px] myback">
-                    {/* section main */}
-                    <div className={' w-[85%] m-auto pt-60'}>
-                        {/* section 6 */}
-                        <section className={'text-white'}>
-                            { /* logo */}
-                            <div className={'flex items-center gap-x-2 text-white justify-center'}>
-                                <Image src={'/img/icon.svg'} alt={'dhd'} width={'38'} height={'38'}></Image>
-                                <h4 className={`${Morabab.className} text-4xl`}>نظرات مشتریان ما</h4>
-                                <Image className={'mt-5'} src={'/img/brag.svg'} alt={'ee'} width={'36'}
-                                       height={'36'}></Image>
-                            </div>
-                            <p className={'text-center mt-6'}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
-                                و با استفاده از طراحان گرافیک
-                                است،
-                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.لورم ایپسوم متن
-                                ساختگی با
-                                تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
-                        </section>
-                        {/* section 7 */}
-                        <section className={'mt-32'}>
-                            { /* logo */}
-                            <div className={'flex items-center gap-x-2 text-white justify-center'}>
-                                <Image src={'/img/icon.svg'} alt={'dhd'} width={'38'} height={'38'}></Image>
-                                <h4 className={`${Morabab.className} text-4xl`}>آخرین مقالات قهوه</h4>
-                                <Image className={'mt-5'} src={'/img/brag.svg'} alt={'ee'} width={'36'}
-                                       height={'36'}></Image>
-                            </div>
-                            {/* weblog section */}
-                            <div className={'flex justify-between mt-10'}>
-                                <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
-                                    <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-3-768x307.jpg"
-                                           alt="c"/>
-                                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
-                                        جدیدترین رندرهای شیائومی طراحی جذاب آن
-                                    </Link>
-                                    <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
-                                        CIVI 2
-                                        را در
-                                        تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                                        از رونمایی این ساعت…</p>
-                                    <div className={'flex justify-between items-center mt-5'}>
-                                        <div className={'text-sm'}>
-                                            <CalendarMonthOutlinedIcon className={'text-sm'}/>
-                                            <span> 16 مهر 1403 </span>
-                                        </div>
-                                        <Link href={'/'}
-                                              className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
-                                            کنید</Link>
-                                    </div>
-                                </div>
-                                <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
-                                    <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-1.jpg"
-                                           alt="c"/>
-                                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
-                                        جدیدترین رندرهای شیائومی طراحی جذاب آن
-                                    </Link>
-                                    <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
-                                        CIVI 2
-                                        را در
-                                        تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                                        از رونمایی این ساعت…</p>
-                                    <div className={'flex justify-between items-center mt-5'}>
-                                        <div className={'text-sm'}>
-                                            <CalendarMonthOutlinedIcon className={'text-sm'}/>
-                                            <span> 16 مهر 1403 </span>
-                                        </div>
-                                        <Link href={'/'}
-                                              className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
-                                            کنید</Link>
-                                    </div>
-                                </div>
-                                <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
-                                    <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-2.jpg"
-                                           alt="c"/>
-                                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
-                                        جدیدترین رندرهای شیائومی طراحی جذاب آن
-                                    </Link>
-                                    <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
-                                        CIVI 2
-                                        را در
-                                        تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                                        از رونمایی این ساعت…</p>
-                                    <div className={'flex justify-between items-center mt-5'}>
-                                        <div className={'text-sm'}>
-                                            <CalendarMonthOutlinedIcon className={'text-sm'}/>
-                                            <span> 16 مهر 1403 </span>
-                                        </div>
-                                        <Link href={'/'}
-                                              className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
-                                            کنید</Link>
-                                    </div>
-                                </div>
-                                <div className={'bg-white w-[301px] h-[356px] rounded-2xl p-3'}>
-                                    <Image className="h-[200px] w-[281px] rounded-2xl" width={'500'} height={'300'}
-                                           src="/img/Blog/post-4-1.jpg"
-                                           alt="c"/>
-                                    <Link href={'/'} className={`${Danab.className} line-clamp-1 text-base mt-4`}>
-                                        جدیدترین رندرهای شیائومی طراحی جذاب آن
-                                    </Link>
-                                    <p className={'text-xs line-clamp-2 pt-[10px]'}>روز گذشته شیائومی اعلام کرد که گوشی
-                                        CIVI 2
-                                        را در
-                                        تاریخ ۵ مهر رسما رونمایی خواهد کرد. اما حالا قبل
-                                        از رونمایی این ساعت…</p>
-                                    <div className={'flex justify-between items-center mt-5'}>
-                                        <div className={'text-sm'}>
-                                            <CalendarMonthOutlinedIcon className={'text-sm'}/>
-                                            <span> 16 مهر 1403 </span>
-                                        </div>
-                                        <Link href={'/'}
-                                              className={'text-xs bg-emerald-600 text-white inline-block rounded-[6px] px-[11px] py-[5px]'}>مطالعه
-                                            کنید</Link>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </section>
-                    </div>
-                </div>
+                        {/* section 7 */}
             </section>
         </div>
     )
